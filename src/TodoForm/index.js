@@ -1,16 +1,16 @@
 import React from 'react';
 import { TodoContext } from '../TodoContext';
 import './TodoForm.css';
-import swal from "sweetalert";
+import swal from 'sweetalert';
 
 function TodoForm() {
 
-  const alerta = () => {
+  const mostrarAlerta = () => {
     swal({
-      title: "BIEN",
-      text: "Se agrego correctamente",
-      icon: "succes",
-      button: "OK",
+      title: "Good",
+      text: "El producto fue agregado correctamente",
+      icon: "success",
+      button: "Ok",
     });
   };
 
@@ -38,7 +38,7 @@ function TodoForm() {
       <textarea
         value={newTodoValue}
         onChange={onChange}
-        placeholder="Cortar la cebolla oara el almuerzo"
+        placeholder="Ingresa un producto para el almuerzo"
       />
       <div className="TodoForm-buttonContainer">
         <button
@@ -48,7 +48,9 @@ function TodoForm() {
         >
           Cancelar
         </button>
+
         <button
+          onClick={() => mostrarAlerta()}
           type="submit"
           className="TodoForm-button TodoForm-button--add"
         >
