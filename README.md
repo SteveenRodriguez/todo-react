@@ -1,3 +1,17 @@
+# Se realizan mejoras a la app de TODO´s
+
+1--> Se realiza mejora visual del TODO
+![](src/imagenes/01.png)
+
+2--> Se creó un sweetalert cuando se guarda un producto
+![](src/imagenes/02.png)
+
+3--> Se agregan estilos al index.html
+![](src/imagenes/03.png)
+
+4--> Se realizó el cambio del homepage
+![](src/imagenes/04.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
